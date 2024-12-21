@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "services": "Services",
+    "Portfolio": "Portfolio",
+    "sontact": "Contact"
+  }
+}
