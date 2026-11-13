@@ -1,851 +1,566 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <title>Portfolio Eloi ANQUETIL</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!-- Favicons -->
-    <link href="assets/img/a.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Eloi Anquetil, ingénieur informatique et réseaux, spécialité cybersécurité. En recherche d’emploi en développement ou en cybersécurité. Découvrez mes projets et mon parcours."
     />
-
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <meta name="theme-color" content="#0b1418" />
+    <title>Eloi Anquetil — Développement & Cybersécurité</title>
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <script src="assets/js/portfolio.js" defer></script>
   </head>
-
   <body>
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="container">
-        <h1><a href="index.html">Eloi ANQUETIL</a></h1>
-
-        <h2>I'm an passionate <span>cybersecurity engineer</span> from ESAIP</h2>
-
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link active" href="#header">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#resume">Resume</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Eloi Anquetil, accueil"
+          >EA<span>.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navbar"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="navbar" aria-label="Navigation principale">
+          <a href="#about">À propos</a><a href="#portfolio">Projets</a
+          ><a href="#resume">Parcours</a><a href="#services">Compétences</a
+          ><a class="nav-contact" href="#contact"
+            >Échangeons <span aria-hidden="true">↗</span></a
+          >
         </nav>
-        <!-- .navbar -->
-
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a
-            href="https://www.linkedin.com/in/eloi-anquetil/"
-            class="linkedin"
-            target="_blank"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-        </div>
       </div>
     </header>
-    <!-- End Header -->
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <!-- ======= About Me ======= -->
-      <div class="about-me container">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Learn more about me</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/PP.jpg" class="img-fluid" alt="" />
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Ingénieur en Cybersécurité</h3>
-            <p class="fst-italic">
-              Etudiant en Informatique avec la majeure CyberSécurité.
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="accent-dot" aria-hidden="true"></span> DÉVELOPPEMENT
+              · CYBERSÉCURITÉ · DATA
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Naissance:</strong> <span>18 April 2002</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Website:</strong>
-                    <span>https://eloi-carnet-competence.netlify.app/</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Telephone:</strong>
-                    <span>+33 7 85 18 76 18</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Adresse:</strong>
-                    <span>Angers, FRANCE</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                    <span>22</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Diplôme:</strong> <span>Master</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Email:</strong>
-                    <span>eloi.anquetil@gmail.com</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Activité professionnelle:</strong>
-                    <span>Disponible</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              Je suis un étudiant en CyberSécurité au sein de l'ESAIP. J'ai pour
-              objectif de devenir Officier Sous Contrat avec l'armée et donc
-              d'être Ingénieur Cybersécurité au sein de la DGSE. Dans 5 ans je
-              serai surement au grade de capitaine et donc avoir une petite
-              équipe de 5 personnes sous mes ordres.
+            <h1 id="hero-title">
+              Eloi<br /><span>Anquetil</span><span class="title-dot">.</span>
+            </h1>
+            <p class="hero-role">
+              Ingénieur informatique & réseaux,<br />spécialité cybersécurité.
             </p>
+            <p class="hero-description">
+              Du développement web à l’automatisation industrielle, un parcours
+              tourné vers les systèmes, les données et leur sécurité.
+            </p>
+            <p class="availability">
+              <span class="accent-dot" aria-hidden="true"></span> En recherche
+              d’emploi en développement ou cybersécurité
+            </p>
+            <div class="actions">
+              <a class="button button-primary" href="#portfolio"
+                >Découvrir mes projets <span aria-hidden="true">↗</span></a
+              ><a
+                class="button button-outline"
+                href="assets/docs/Eloi_ANQUETIL_CV.pdf"
+                download
+                >Télécharger mon CV <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <div class="hero-links">
+              <a
+                href="https://www.linkedin.com/in/eloi-anquetil/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn ↗</a
+              ><span aria-hidden="true">/</span
+              ><a href="mailto:eloi.anquetil@gmail.com">Me contacter ↗</a>
+            </div>
+          </div>
+          <div class="portrait-wrap">
+            <div class="portrait-frame">
+              <img
+                src="assets/img/PP.jpg"
+                alt="Portrait d’Eloi Anquetil"
+                width="1200"
+                height="1600"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="portrait-label">
+              <span class="accent-dot" aria-hidden="true"></span>
+              <div>
+                <strong>De la technique au concret.</strong
+                ><span>Diplômé ESAIP · Promotion 2025</span>
+              </div>
+            </div>
+            <span class="portrait-index" aria-hidden="true">01 / PROFIL</span>
           </div>
         </div>
-      </div>
-      <!-- End About Me -->
-
-      <!-- ======= Counts ======= -->
-      <div class="counts container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span
-                data-purecounter-start="0"
-                data-purecounter-end="2"
-                data-purecounter-duration="1"
-                class="purecounter"
-              ></span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span
-                data-purecounter-start="0"
-                data-purecounter-end="7"
-                data-purecounter-duration="1"
-                class="purecounter"
-              ></span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span
-                data-purecounter-start="0"
-                data-purecounter-end="153"
-                data-purecounter-duration="1"
-                class="purecounter"
-              ></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-award"></i>
-              <span
-                data-purecounter-start="0"
-                data-purecounter-end="1"
-                data-purecounter-duration="1"
-                class="purecounter"
-              ></span>
-              <p>Awards</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Counts -->
-
-      <!-- ======= Skills  ======= -->
-      <div class="skills container">
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="row skills-content">
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="60"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill">Java <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="55"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Skills -->
-
-      <!-- ======= Interests ======= -->
-      <!-- End Interests -->
-
-      <!-- ======= Testimonials ======= -->
-      <div class="testimonials container">
-        <div class="section-title">
-          <h2>Testimonials</h2>
-        </div>
-
-        <div
-          class="testimonials-slider swiper"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Eloi nous a refait un site pour l'école qui nous permet de
-                  mettre des notes aux élèves et de publier des articles en
-                  fonction de chaque classe. Le site est simple pour tous. J'en
-                  suis très satisfait.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img
-                  src="assets/img/testimonials/testimonials-1.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Vincent DUVEAU</h3>
-                <h4>Directeur d'école</h4>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse
-                  labore quem cillum quid cillum eram malis quorum velit fore
-                  eram velit sunt aliqua noster fugiat irure amet legam anim
-                  culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img
-                  src="assets/img/testimonials/testimonials-2.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint
-                  quorum nulla quem veniam duis minim tempor labore quem eram
-                  duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img
-                  src="assets/img/testimonials/testimonials-3.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                  multos export minim fugiat minim velit minim dolor enim duis
-                  veniam ipsum anim magna sunt elit fore quem dolore labore
-                  illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img
-                  src="assets/img/testimonials/testimonials-4.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua
-                  veniam tempor noster veniam enim culpa labore duis sunt culpa
-                  nulla illum cillum fugiat legam esse veniam culpa fore nisi
-                  cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img
-                  src="assets/img/testimonials/testimonials-5.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel"></div>
-      </div>
-      <!-- End Testimonials  -->
-    </section>
-    <!-- End About Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Voici mon Parcours</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Etudes</h3>
-            <div class="resume-item">
-              <h4>Ingénieur Informatique avec la spécialité Cybersécurité</h4>
-              <h5>2021 - 2025</h5>
-              <p>
-                <em>
-                ESAIP (Ecole Supérieur Angevine d'Informatique et de
-                Productique), St Bathélémy-en-Anjou,49000
-                </em>
-                <ul>
-                  Durant mon cursus j'ai pu effectuer différents projets bénévoles :
-                  <li>Secrétaire de l'association Esaip:Robot'X</li>
-                  <li>Création d'un site web pour l'école Sacré-Coeur Saint Jacques de la Fleche</li>
-                </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Erasmus</h4>
-              <h5>Sept. 2024 - Fev. 2025</h5>
-              <p>
-                <em>
-                Technische Horschule Brandenburg, Brandenburg-an-der-Havel, Allemagne
-                </em>
-                <ul>
-                  <li>Création d'une application en Cross Device sans server en Unity</li>
-                  <li></li>
-                </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Erasmus,</h4>
-              <h5>Fév. 2023 - Juin 2023</h5>
-              <p><em>Politechnika Łódzka, Łódz, Pologne</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Classe préparatoire aux Grandes Ecoles</h4>
-              <h5>Sept. 2021 - Juin 2022</h5>
-              <p><em>Esaip</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Acquisition d'une Période Militaire Spécialisée(PMS)</h4>
-              <h5>Mai 2021</h5>
-              <p><em>Prytanée National Militaire, La Flèche</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Classe préparatoire aux Grandes Ecoles, MPSI</h4>
-              <h5>Août 2020 - Juin 2021</h5>
-              <p><em>Prytanée National Militaire, La Flèche</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>
-                Baccalauréat Scientifique spécialité Mathématiques Mention Bien,
-              </h4>
-              <h5>Juin 2020</h5>
-              <p><em>Lycée Saint-Aubin-La-Salle, Angers </em></p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Expérience Professionnelle</h3>
-            <div class="resume-item">
-              <h4>Method Trainee</h4>
-              <h5>Mars 2025 - Septembre 2025</h5>
-              <p><em>Schneider Electric, Örebro Suède </em></p>
-              <ul>
-                <li></li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Chef de Projet - Ingénieur Informatique</h4>
-              <h5>Juin 2024 - Août 2024</h5>
-              <p><em>DAMOTIC Technologies, Sainte-Maxime </em></p>
-              <ul>
-                <li>Mise en place d'un système de backup VPN</li>
-                <li>Création d'une box Firewall</li>
-                <li>Prestataire en service de ticketing</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Agent d'Entretien</h4>
-              <h5>Juil. 2023 - Août 2023</h5>
-              <p><em>Sacré-Coeur Saint Jacques, La Flèche </em></p>
-              <ul>
-                <li>Remise en service du parc informatique</li>
-                <li>Création d'un site pour l'école</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>PMD - Période Militaire Découverte</h4>
-              <h5>Nov. 2018</h5>
-              <p><em>2ème Régiment d'Infanterie de marine- Le Mans </em></p>
-              <ul>
-                <li>Découverte du régime militaire.</li>
-                <li>Mise en place d'un bivouac</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Assistant dans une classe de CP</h4>
-              <h5>3sem. Juin 2018</h5>
-              <p><em>Sacré-Coeur Saint Jacques, La Flèche </em></p>
-              <ul>
-                <li>Apprentissage des opérations</li>
-                <li>Aide au travail en autonomie</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Resume Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Mes Services</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Création de site Web </a></h4>
-              <p>
-                Création d'un site web avec le front end et le back end en lien
-                avec une base de donnée
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+        <div class="container hero-bottom">
+          <span>France · Parcours européen</span
+          ><a href="#about"
+            >Explorer le portfolio <span aria-hidden="true">↓</span></a
           >
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-network-chart"></i></div>
-              <h4><a href="">Test de pénétration réseau</a></h4>
-              <p>
-                Test de pénétration sur votre réseau et proposition de sécurité
-                pour l'entreprise
-              </p>
-            </div>
-          </div>
+        </div>
+      </section>
 
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">01 / À PROPOS</p>
+            <h2 id="about-title">
+              Curieux de comprendre.<br /><span>Motivé pour construire.</span>
+            </h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Diplômé de l’ESAIP en informatique et réseaux, avec une
+                spécialisation en cybersécurité, j’ai développé mon expérience
+                entre la France, la Pologne, l’Allemagne et la Suède.
+              </p>
+              <p>
+                Chez Schneider Electric, j’ai travaillé sur l’automatisation de
+                processus, la création de tableaux de bord et la gestion de
+                données. Mes expériences chez DAMOTIC et dans une école m’ont
+                également amené à concevoir des outils web et à intervenir sur
+                des infrastructures informatiques.
+              </p>
+              <p>
+                Je recherche aujourd’hui un emploi en développement ou en
+                cybersécurité pour mettre ces compétences au service de nouveaux
+                projets.
+              </p>
+              <a class="text-link" href="#resume"
+                >Découvrir mon parcours <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <dl class="profile-facts">
+              <div>
+                <dt>Formation</dt>
+                <dd>Ingénieur ESAIP · 2025</dd>
+              </div>
+              <div>
+                <dt>Expérience internationale</dt>
+                <dd>Suède, Allemagne, Pologne</dd>
+              </div>
+              <div>
+                <dt>Langues</dt>
+                <dd>Français · Anglais (TOEIC 800) · Allemand B2</dd>
+              </div>
+              <div>
+                <dt>En dehors du code</dt>
+                <dd>Sport, powerlifting & jeux vidéo</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section projects-section"
+        id="portfolio"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section-heading heading-row">
+            <div>
+              <p class="eyebrow">02 / PROJETS</p>
+              <h2 id="projects-title">
+                Des idées.<br /><span>Des réalisations.</span>
+              </h2>
+            </div>
+            <p>Une sélection de projets web,<br />de systèmes et de données.</p>
+          </div>
           <div
-            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+            class="project-filters"
+            role="group"
+            aria-label="Filtrer les projets"
           >
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Pentest</a></h4>
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia
-              </p>
-            </div>
+            <button
+              type="button"
+              class="active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              Tous les projets</button
+            ><button type="button" data-filter="web" aria-pressed="false">
+              Développement web</button
+            ><button type="button" data-filter="systems" aria-pressed="false">
+              Systèmes & sécurité</button
+            ><button type="button" data-filter="data" aria-pressed="false">
+              Data & automatisation
+            </button>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>
-                Quis consequatur saepe eligendi voluptatem consequatur dolor
-                consequuntur
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>
-                Modi nostrum vel laborum. Porro fugit error sit minus sapiente
-                sit aspernatur
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>My Works</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/bloglodz.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Blog Lodz</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/bloglodz.png"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Blog Lodz"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a
-                    href="https://lodz-erasmus-2023.netlify.app/"
-                    data-gallery="portfolioDetailsGallery"
-                    data-glightbox="type: external"
-                    class="portfolio-details-lightbox"
-                    title="Portfolio Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/blogostrava.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Blog Ostrava</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/blogostrava.png"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Web 2"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a
-                    href="https://ostravadventure.netlify.app/"
-                    data-gallery="portfolioDetailsGallery"
-                    data-glightbox="type: external"
-                    class="portfolio-details-lightbox"
-                    title="Portfolio Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contactez-moi</p>
-        </div>
-
-        <div class="row mt-2">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Mon Adresse</h3>
-              <p>Angers, France</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-share-alt"></i>
-              <h3>Social Profiles</h3>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"
-                  ><i class="bi bi-instagram"></i
-                ></a>
+          <p id="filter-status" class="sr-only" role="status"></p>
+          <div class="project-grid">
+            <article class="project-card" data-category="web">
+              <a
+                class="project-image"
+                href="https://lodz-erasmus-2023.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visiter le blog Erasmus à Łódź, nouvel onglet"
+                ><img
+                  src="assets/img/bloglodz.png"
+                  alt="Aperçu du blog Erasmus à Łódź"
+                  width="800"
+                  height="480"
+                  loading="lazy"
+                /><span class="image-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-content">
+                <p class="project-category">WEB / ERASMUS</p>
+                <h3>Un semestre à Łódź</h3>
+                <p>
+                  Un blog consacré à l’expérience Erasmus en Pologne, pour
+                  partager les découvertes et les aventures du semestre.
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
                 <a
+                  class="text-link"
+                  href="https://lodz-erasmus-2023.netlify.app/"
                   target="_blank"
-                  href="https://www.linkedin.com/in/eloi-anquetil-886835223/"
-                  class="linkedin"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
+                  rel="noopener noreferrer"
+                  >Explorer le site <span aria-hidden="true">↗</span></a
+                >
               </div>
-            </div>
+            </article>
+            <article class="project-card" data-category="web">
+              <a
+                class="project-image"
+                href="https://ostravadventure.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visiter le blog Ostrav’Adventure, nouvel onglet"
+                ><img
+                  src="assets/img/blogostrava.png"
+                  alt="Aperçu du blog Ostrav’Adventure"
+                  width="800"
+                  height="480"
+                  loading="lazy"
+                /><span class="image-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-content">
+                <p class="project-category">WEB / PROJET COLLECTIF</p>
+                <h3>Ostrav’Adventure</h3>
+                <p>
+                  Un blog de voyage réalisé en groupe pour raconter un semestre
+                  Erasmus et rassembler les expériences vécues à Ostrava.
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <a
+                  class="text-link"
+                  href="https://ostravadventure.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Explorer le site <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-category="data">
+              <div class="project-visual data-visual" aria-hidden="true">
+                <span class="visual-caption">PROCESS / DATA</span>
+                <div class="chart-bars">
+                  <span></span><span></span><span></span><span></span
+                  ><span></span><span></span><span></span>
+                </div>
+                <span class="visual-note"
+                  >Automatiser. Analyser. Comprendre.</span
+                >
+              </div>
+              <div class="project-content">
+                <p class="project-category">SCHNEIDER ELECTRIC / 2025–2026</p>
+                <h3>Des données aux outils métier</h3>
+                <p>
+                  Automatisation de processus, création de tableaux de bord avec
+                  Tableau et gestion de données avec PostgreSQL. En stage :
+                  création d’un outil de calcul du remplissage d’un camion.
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>Tableau</li>
+                  <li>PostgreSQL</li>
+                  <li>Automatisation</li>
+                </ul>
+                <a class="text-link" href="#resume"
+                  >Voir l’expérience <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-category="systems">
+              <div class="project-visual security-visual" aria-hidden="true">
+                <span class="visual-caption">NETWORK / SECURITY</span>
+                <div class="network-diagram">
+                  <span>RÉSEAU</span><i></i><span>PARE-FEU</span><i></i
+                  ><span>ACCÈS</span>
+                </div>
+                <span class="visual-note">Des accès encadrés.</span>
+              </div>
+              <div class="project-content">
+                <p class="project-category">DAMOTIC / 2024</p>
+                <h3>Pare-feu & portail captif</h3>
+                <p>
+                  Création d’un pare-feu avec portail captif au cours de mon
+                  expérience chez DAMOTIC, aux côtés de projets de billetterie
+                  et de migration de serveur.
+                </p>
+                <ul class="tags" aria-label="Domaines">
+                  <li>Réseaux</li>
+                  <li>Pare-feu</li>
+                  <li>Portail captif</li>
+                </ul>
+                <a class="text-link" href="#resume"
+                  >Voir l’expérience <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
           </div>
+          <p class="project-footnote">
+            Les illustrations des projets Schneider Electric et DAMOTIC sont des
+            schémas de présentation.
+          </p>
+        </div>
+      </section>
 
-          <div class="col-md-6 mt-4 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-envelope"></i>
-              <h3>Email</h3>
-              <p>eloi.anquetil@gmail.com</p>
+      <section class="section" id="resume" aria-labelledby="resume-title">
+        <div class="container">
+          <div class="section-heading heading-row">
+            <div>
+              <p class="eyebrow">03 / PARCOURS</p>
+              <h2 id="resume-title">
+                Apprendre ici.<br /><span>Expérimenter ailleurs.</span>
+              </h2>
             </div>
+            <a
+              class="button button-outline"
+              href="assets/docs/Eloi_ANQUETIL_CV.pdf"
+              download
+              >Mon CV complet <span aria-hidden="true">↓</span></a
+            >
           </div>
-          <div class="col-md-6 mt-4 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Me</h3>
-              <p>+33 7 85 18 76 18</p>
+          <div class="resume-grid">
+            <div>
+              <h3 class="column-title">Expériences professionnelles</h3>
+              <ol class="timeline">
+                <li>
+                  <p class="period">
+                    SEPT. 2025 — AOÛT 2026 <span>Suède</span>
+                  </p>
+                  <h4>Ingénieur Méthodes</h4>
+                  <p class="organization">Schneider Electric</p>
+                  <p>
+                    Automatisation de processus, tableaux de bord Tableau et
+                    gestion de données PostgreSQL.
+                  </p>
+                </li>
+                <li>
+                  <p class="period">
+                    MARS — SEPT. 2025 <span>Örebro, Suède</span>
+                  </p>
+                  <h4>Stagiaire Méthodes</h4>
+                  <p class="organization">Schneider Electric</p>
+                  <p>
+                    Création d’un outil de calcul du remplissage d’un camion de
+                    transport.
+                  </p>
+                </li>
+                <li>
+                  <p class="period">
+                    JUIN — SEPT. 2024 <span>Sainte-Maxime, France</span>
+                  </p>
+                  <h4>Ingénieur Informatique</h4>
+                  <p class="organization">DAMOTIC</p>
+                  <p>
+                    Billetterie et changement de serveur pour LAPP, pare-feu
+                    avec portail captif et preuve de concept pour l’amélioration
+                    de Parcoursup.
+                  </p>
+                </li>
+                <li>
+                  <p class="period">
+                    JUIL. — AOÛT 2023 <span>La Flèche, France</span>
+                  </p>
+                  <h4>Informaticien</h4>
+                  <p class="organization">École du Sacré-Cœur Saint-Jacques</p>
+                  <p>
+                    Mise à jour du site de l’école : saisie des notes, articles
+                    de blog et trois types de comptes — administrateur,
+                    enseignant et élève.
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <div>
+              <h3 class="column-title">Formation & ouverture internationale</h3>
+              <ol class="timeline">
+                <li>
+                  <p class="period">2021 — 2025 <span>France</span></p>
+                  <h4>Diplôme d’ingénieur Informatique & Réseaux</h4>
+                  <p class="organization">ESAIP · Spécialité cybersécurité</p>
+                  <p>
+                    Projets de blockchain pour la sécurisation des diplômes et
+                    de site web relié à une base de données. 7e place au
+                    concours Design4Green.
+                  </p>
+                </li>
+                <li>
+                  <p class="period">
+                    SEPT. 2024 — JANV. 2025 <span>Allemagne</span>
+                  </p>
+                  <h4>Semestre Erasmus</h4>
+                  <p class="organization">Technische Hochschule Brandenburg</p>
+                  <p>Brandenburg-an-der-Havel.</p>
+                </li>
+                <li>
+                  <p class="period">FÉV. — JUIN 2023 <span>Pologne</span></p>
+                  <h4>Semestre Erasmus</h4>
+                  <p class="organization">Politechnika Łódzka</p>
+                  <p>Développement web full stack et réseaux : CCNA 1.</p>
+                </li>
+                <li>
+                  <p class="period">
+                    2020 — 2021 <span>La Flèche, France</span>
+                  </p>
+                  <h4>Classe préparatoire MPSI</h4>
+                  <p class="organization">Prytanée National Militaire</p>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
+      </section>
 
-        <form
-          action="forms/contact.php"
-          method="post"
-          role="form"
-          class="php-email-form mt-4"
-        >
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input
-                type="text"
-                name="name"
-                class="form-control"
-                id="name"
-                placeholder="Your Name"
-                required
-              />
+      <section
+        class="section skills-section"
+        id="services"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">04 / COMPÉTENCES</p>
+            <h2 id="skills-title">
+              Plusieurs domaines.<br /><span>Une même curiosité.</span>
+            </h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <span class="skill-number">01 /</span>
+              <h3>Développement</h3>
+              <p>
+                Des interfaces web aux outils métier, créer des applications
+                adaptées à leur usage.
+              </p>
+              <ul class="tags">
+                <li>HTML / CSS</li>
+                <li>JavaScript / TypeScript</li>
+                <li>Java</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">02 /</span>
+              <h3>Systèmes & sécurité</h3>
+              <p>
+                Une formation en cybersécurité complétée par des projets de
+                réseaux, de pare-feu et de gestion des accès.
+              </p>
+              <ul class="tags">
+                <li>Linux</li>
+                <li>Réseaux</li>
+                <li>Cybersécurité</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">03 /</span>
+              <h3>Data & automatisation</h3>
+              <p>
+                Structurer les données, faciliter leur lecture et automatiser
+                des processus métier.
+              </p>
+              <ul class="tags">
+                <li>PostgreSQL</li>
+                <li>Tableau</li>
+                <li>Automatisation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">05 / CONTACT</p>
+            <h2 id="contact-title">Et si on<br /><span>échangeait ?</span></h2>
+            <p>
+              Vous recrutez en développement ou en cybersécurité ? Échangeons
+              sur votre équipe et vos projets.
+            </p>
+            <a class="contact-email" href="mailto:eloi.anquetil@gmail.com"
+              >eloi.anquetil@gmail.com <span aria-hidden="true">↗</span></a
+            >
+            <div class="actions">
+              <a
+                class="button button-primary"
+                href="mailto:eloi.anquetil@gmail.com"
+                >Envoyer un e-mail <span aria-hidden="true">↗</span></a
+              ><button
+                class="button button-outline"
+                type="button"
+                id="copy-email"
+              >
+                Copier l’adresse <span aria-hidden="true">⧉</span>
+              </button>
             </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
+            <p
+              class="copy-status"
+              id="copy-status"
+              role="status"
+              aria-live="polite"
+            ></p>
           </div>
-          <div class="form-group mt-3">
-            <input
-              type="text"
-              class="form-control"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              required
-            />
+          <div class="contact-aside">
+            <a
+              href="https://www.linkedin.com/in/eloi-anquetil/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span>Retrouvons-nous sur</span
+              ><strong>LinkedIn <span aria-hidden="true">↗</span></strong></a
+            ><a href="tel:+33785187618"
+              ><span>Par téléphone</span><strong>+33 7 85 18 76 18</strong></a
+            ><a
+              href="assets/docs/Eloi_ANQUETIL_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span>Mon parcours en un document</span
+              ><strong
+                >Consulter le CV <span aria-hidden="true">↗</span></strong
+              ></a
+            >
           </div>
-          <div class="form-group mt-3">
-            <textarea
-              class="form-control"
-              name="message"
-              rows="5"
-              placeholder="Message"
-              required
-            ></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">
-              Your message has been sent. Thank you!
-            </div>
-          </div>
-          <div class="text-center">
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home">EA<span>.</span></a>
+        <p>© <span id="current-year">2026</span> Eloi Anquetil</p>
+        <a href="#home">Retour en haut ↑</a>
       </div>
-    </section>
-    <!-- End Contact Section -->
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    </footer>
   </body>
 </html>
