@@ -15,16 +15,15 @@
     el = el.trim()
     if (all) {
       return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
     }
+    return document.querySelector(el)
   }
 
   /**
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+    const selectEl = select(el, all)
 
     if (selectEl) {
       if (all) {
@@ -36,9 +35,9 @@
   }
 
   /**
-   * Scrolls to an element with header offset
+   * Scroll to the top when switching sections.
    */
-  const scrollto = (el) => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -48,24 +47,31 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function() {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Switch sections and close the mobile navigation.
    */
   on('click', '#navbar .nav-link', function(e) {
-    let section = select(this.hash)
+    const section = select(this.hash)
     if (section) {
       e.preventDefault()
 
-      let navbar = select('#navbar')
-      let header = select('#header')
-      let sections = select('section', true)
-      let navlinks = select('#navbar .nav-link', true)
+      const navbar = select('#navbar')
+      const header = select('#header')
+      const sections = select('section', true)
+      const navlinks = select('#navbar .nav-link', true)
+
+      const showSection = () => {
+        sections.forEach((item) => {
+          item.classList.remove('section-show')
+        })
+        section.classList.add('section-show')
+      }
 
       navlinks.forEach((item) => {
         item.classList.remove('active')
@@ -75,12 +81,12 @@
 
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
+        const navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }
 
-      if (this.hash == '#header') {
+      if (this.hash === '#header') {
         header.classList.remove('header-top')
         sections.forEach((item) => {
           item.classList.remove('section-show')
@@ -90,21 +96,12 @@
 
       if (!header.classList.contains('header-top')) {
         header.classList.add('header-top')
-        setTimeout(function() {
-          sections.forEach((item) => {
-            item.classList.remove('section-show')
-          })
-          section.classList.add('section-show')
-
-        }, 350);
+        setTimeout(showSection, 350);
       } else {
-        sections.forEach((item) => {
-          item.classList.remove('section-show')
-        })
-        section.classList.add('section-show')
+        showSection()
       }
 
-      scrollto(this.hash)
+      scrollToTop()
     }
   }, true)
 
@@ -113,27 +110,23 @@
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
-      let initial_nav = select(window.location.hash)
+      const initialSection = select(window.location.hash)
 
-      if (initial_nav) {
-        let header = select('#header')
-        let navlinks = select('#navbar .nav-link', true)
+      if (initialSection) {
+        const header = select('#header')
+        const navlinks = select('#navbar .nav-link', true)
 
         header.classList.add('header-top')
 
         navlinks.forEach((item) => {
-          if (item.getAttribute('href') == window.location.hash) {
-            item.classList.add('active')
-          } else {
-            item.classList.remove('active')
-          }
+          item.classList.toggle('active', item.getAttribute('href') === window.location.hash)
         })
 
         setTimeout(function() {
-          initial_nav.classList.add('section-show')
+          initialSection.classList.add('section-show')
         }, 350);
 
-        scrollto(window.location.hash)
+        scrollToTop()
       }
     }
   });
@@ -141,13 +134,13 @@
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
+  const skillsContent = select('.skills-content');
+  if (skillsContent) {
     new Waypoint({
-      element: skilsContent,
+      element: skillsContent,
       offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
+      handler: function() {
+        const progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
         });
@@ -185,17 +178,17 @@
   });
 
   /**
-   * Porfolio isotope and filter
+   * Portfolio layout and filters
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+    const portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
+      const portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      const portfolioFilters = select('#portfolio-flters li', true);
 
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
@@ -213,16 +206,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
-  const portfolioLightbox = GLightbox({
+  GLightbox({
     selector: '.portfolio-lightbox'
   });
 
   /**
-   * Initiate portfolio details lightbox 
+   * Initiate portfolio details lightbox
    */
-  const portfolioDetailsLightbox = GLightbox({
+  GLightbox({
     selector: '.portfolio-details-lightbox',
     width: '90%',
     height: '90vh'
@@ -246,7 +239,7 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
 
